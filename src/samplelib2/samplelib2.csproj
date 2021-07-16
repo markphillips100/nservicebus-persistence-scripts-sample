@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageVersion Include="NServiceBus" Version="7.4.7" />
+    <PackageReference Include="NServiceBus.Persistence.Sql" Version="6.2.0" />
+  </ItemGroup>
+  
+</Project>
