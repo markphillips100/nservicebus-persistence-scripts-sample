@@ -6,10 +6,11 @@ The solution expects samplelib2 to be deployed as a package which is referenced 
 
 1. Clone the repository
 2. Create a folder at root of local repository called "sample-packages".
-3. Open a terminal and change directory to the repository folder.
-4. Run `dotnet build`.  NOTE: This will fail but is required to initially create the samplelib2 package.
-5. Run `nuget add src\samplelib2\bin\Debug\samplelib2.1.0.0.nupkg` -expand -source sample-packages.
-6. Run `dotnet build`.  This time the build should pass okay.
+3. Open a terminal and change directory to the `<repository-folder>\src\samplelib2`.
+4. Run `dotnet build`.  NOTE: This will build the samplelib2 package and create its package.
+5. Run `nuget add bin\Debug\samplelib2.1.0.0.nupkg -expand -source ..\..\sample-packages`.
+6. Change directory to the root folder of the repository.
+6. Run `dotnet build`.
 
 
 ## Observations
